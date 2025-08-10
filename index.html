@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Khumo's Cleaning Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    header {
+      background-color: #0D1B2A;
+      color: white;
+      padding: 20px 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    header h1 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 10%;
+      width: 80%;
+      height: 2px;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    section {
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: #e6f4fa; /* Light Blue Background */
+      width: 90%;
+      max-width: 1000px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 8px 16px rgba(13, 27, 42, 0.2);
+    }
+
+    section:hover {
+      transform: scale(1.01);
+      box-shadow: 0 12px 24px rgba(13, 27, 42, 0.3);
+      cursor: pointer;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .icon {
+      font-size: 1.2em;
+      margin-right: 10px;
+      color: #0D1B2A;
+    }
+
+    .about-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .about-gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    }
+
+    .service-image {
+      display: block;
+      width: 60%;
+      height: 180px;
+      margin: 15px auto;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    #contact a {
+      display: block;
+      margin: 10px 0;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    input, textarea {
+      width: 95%;
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #aaa;
+      margin-top: 10px;
+    }
+
+    textarea {
+      height: 100px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #0D1B2A;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #001225;
+    }
+
+    footer {
+      background-color: #0D1B2A;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .about-gallery {
+        grid-template-columns: 1fr;
+      }
+
+      .service-image {
+        width: 90%;
+      }
+
+      nav {
+        gap: 10px;
+      }
+    }
+    .logo-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .logo-container img {
+        max-width: 120px;
+      }
+      .logo-container img {
+      max-width: 140px; /* Reduced size */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🏠 Khumo's Cleaning Services</h1>
+    <p style="text-align:center;">Your trusted partner in professional cleaning.</p>
+    <nav>
+      <a href="#home-section">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+  <section id="home-section">
+    <h2><span class="icon">👋</span>Welcome to Khumo's Cleaning Services</h2>
+
+<p>Welcome to <b>Khumo's Cleaning Services</b>, where cleanliness meets professionalism. We are passionate about creating spotless, healthy, and organized environments for businesses, estates, and post-construction sites.</p>
+
+<p>With a trusted team and a commitment to excellence, we take pride in delivering reliable and tailored cleaning solutions you can count on. Whether you're looking for regular office cleaning or a deep post-construction clean-up, we’re here to make your space shine.</p>
+
+<p><b>Clean spaces, happy faces — that's the Khumo promise!</b></p>
+
+  </section>
+
+  <section id="about">
+    <h2><span class="icon">ℹ</span>About Us</h2>
+
+<p><b>Khumo's Cleaning Services</b> is a proudly South African, black female-owned cleaning company committed to excellence, reliability, and quality service. We specialize in providing top-tier cleaning solutions for <b>large corporate offices, estates, post-construction sites, and commercial properties.</b>
+
+With a dedicated and professional team, we aim to create clean, safe, and welcoming environments for our clients. Whether it's daily office maintenance or large-scale estate upkeep, we tailor our services to meet your specific needs.
+
+<p><At <b>Khumo's Cleaning Service,</b> we believe a clean space is a productive space. That’s why we focus on:</p>
+
+<ul>
+  <li>Attention to detail</li>
+  <li>Eco-friendly cleaning methods</li>
+  <li>Timely and trustworthy service delivery</li>
+</ul>
+
+
+Let us do the dirty work — so you can focus on what matters most.</p>
+
+
+    <div class="about-gallery">
+      <img src="images/GROUP 1.jpg" alt="Cleaning Team 1">
+      <img src="images/GROUP 3.jpg" alt="Cleaning Team 2">
+      <img src="images/GROUP 4.jpg" alt="Cleaning Team 3">
+      <img src="images/GROUP 5.jpg" alt="Cleaning Team 4">
+    </div>
+  </section>
+
+  <section id="services">
+    <h2><span class="icon">🧹</span>Our Services</h2>
+
+    <h3>🏢 Office Cleaning</h3>
+    <p><b>Description:</b> Reliable and detailed office cleaning tailored for businesses of all sizes.</p>
+    <ul>
+      <li>Daily, weekly, or monthly schedules</li>
+      <li>Surface dusting and sanitation</li>
+      <li>Floor care (vacuum & mop)</li>
+      <li>Restroom cleaning & supplies</li>
+      <li>Interior window cleaning</li>
+    </ul>
+    <img src="images/office.jpg" alt="Office Cleaning" class="service-image">
+
+    <h3>🏘 Estate Cleaning</h3>
+    <p><b>Description:</b> Services for gated communities and residential estates.</p>
+    <ul>
+      <li>Common area cleaning</li>
+      <li>Patio and garden upkeep</li>
+      <li>Lobby and entryways</li>
+      <li>Shared window cleaning</li>
+      <li>Seasonal deep cleaning</li>
+    </ul>
+    <img src="images/estate.jpg" alt="Estate Cleaning" class="service-image">
+
+    <h3>🚧 Post-Construction Cleanups</h3>
+    <p><b>Description:</b> Final-stage cleanup after building or renovation.</p>
+    <ul>
+      <li>Dust and debris removal</li>
+      <li>Wall and floor washing</li>
+      <li>Deep restroom/kitchen cleaning</li>
+      <li>Sticker and residue removal</li>
+      <li>Surface polishing</li>
+    </ul>
+    <img src="images/constraction.jpg" alt="Post Construction Cleanup" class="service-image">
+  </section>
+
+  <section id="contact">
+    <h2><span class="icon">📞</span>Contact Us</h2>
+    <a href="tel:+27712345678">📱 +27 71 234 5678</a>
+    <a href="https://wa.me/27712345678">💬 WhatsApp</a>
+    <a href="https://facebook.com/khumoscleaning">🔗 Facebook Page</a>
+    <a href="mailto:info@khumoscleaning.co.za">📧 Email Us</a>
+  </section>
+
+  <section id="feedback">
+    <h2><span class="icon">📝</span>Leave Feedback</h2>
+    <input type="text" id="name" placeholder="Your name" />
+    <input type="email" id="email" placeholder="Your email" />
+    <textarea id="message" placeholder="Your message..."></textarea>
+    <button class="submit-btn" onclick="submitFeedback()">Submit</button>
+  </section>
+  <div class="logo-container">
+    <img src="images/logo.jpg" alt="Khumo's Cleaning Services Logo">
+  </div>
+
+  <footer>
+    &copy; 2025 Khumo's Cleaning Services. All Rights Reserved.
+  </footer>
+
+  <script>
+    function submitFeedback() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !message) {
+        alert("⚠ Please fill in all fields before submitting.");
+        return;
+      }
+
+      alert("✅ Thank you, " + name + "! Your message has been received.");
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    }
+  </script>
+
+</body>
+</html>
